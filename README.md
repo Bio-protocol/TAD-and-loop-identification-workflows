@@ -55,12 +55,23 @@ CGTTNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNGGAG
 
 ## Major steps
 
-Step 1: running the FastQC to conduct quality checking
+#### Step 1: running the FastQC to conduct quality checking
 - Note that you have to normalize the path in the shell script.
 
 ```
 sh workflow/1_run_fastqc.sh
 ```
+
+#### Step 2: view the `html` results
+
+Results can be visualized by clicking `output/fastqc.html`.
+Alternatively, you can unzip the `reads1_fqstqc.zip` and plot the results yourself using the below R code.
+
+```
+
+```
+
+
 
 ## Expected results
 

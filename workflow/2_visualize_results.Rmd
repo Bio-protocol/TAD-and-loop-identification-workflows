@@ -1,0 +1,20 @@
+---
+title: "Get QC using NGS data"
+output: NULL
+author: "YOUR NAME"
+---
+
+# This is an example command to get QC
+
+```{bash}
+module load fastqc
+fastqc -o /lustre/work/jyanglab/gxu6/msfs_teo/WGBS/cache/FastQC_result/maize -f fastq -t 8 SRR6201704_1.fastq.gz SRR6201704_2.fastq.gz > SRR6201704.run.log
+```
+
+## Aggregate results from FastQC
+
+```{bash}
+module load multiqc
+multiqc *fastqc.zip
+```
+

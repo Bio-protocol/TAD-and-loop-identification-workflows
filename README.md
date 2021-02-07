@@ -21,14 +21,18 @@ To guide eBook authors having a better sense of the workflow layout, here we bri
 
 This is an example workflow to check the quality of the paired-end fastq files using `FastQC` software.
 
+![](graphs/diagram.png)
+
 ## Installation
 
 - __Running environment__: 
     - The workflow was constructed based on the __Linux system__ running the Oracle v1.6 to 1.8 java runtime environment (JREs).
 
-- __Version__: 
+- __Required software and versions__: 
     - [FastQC v0.11.9](http://www.bioinformatics.babraham.ac.uk/projects/download.html#fastqc)
     - [R 3.6.3](https://cran.r-project.org/) for results ploting
+        - [RStudio 1.4](https://rstudio.com/), [ggplot2 3.3.3](https://cran.r-project.org/web/packages/ggplot2/index.html), [tidyr 1.1.2](https://github.com/tidyverse/tidyr)
+
 
 ## Input Data
 

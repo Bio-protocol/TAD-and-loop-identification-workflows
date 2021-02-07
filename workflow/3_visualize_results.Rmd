@@ -1,20 +1,59 @@
 ---
-title: "Get QC using NGS data"
+title: "Plot the multiqc results"
 output: NULL
 author: "YOUR NAME"
 ---
 
-# This is an example command to get QC
-
-```{bash}
-module load fastqc
-fastqc -o /lustre/work/jyanglab/gxu6/msfs_teo/WGBS/cache/FastQC_result/maize -f fastq -t 8 SRR6201704_1.fastq.gz SRR6201704_2.fastq.gz > SRR6201704.run.log
+# Normalize the path
+```{r setup}
+knitr::opts_knit$set(root.dir=normalizePath('../'))
+knitr::opts_chunk$set(warning=FALSE, message=FALSE, error=FALSE, echo=TRUE)
 ```
 
-## Aggregate results from FastQC
 
-```{bash}
-module load multiqc
-multiqc *fastqc.zip
+
+# Plot results using ggplot2
+
+### reshape the data
+
+```{r}
+
+library(tidyr)
+
+res <- read.delim("output/multiqc_data/multiqc_fastqc.txt")
+
+df <- gather(res[, c("Filename", "X.GC", "total_deduplicated_percentage")], key="stat", value="value", 2:3)
+```
+
+### plot the figures
+
+```{r}
+library(ggplot2)
+fsize=18
+df$stat <- factor(df$stat, levels = c( "X.GC", "total_deduplicated_percentage"),
+                    labels =c( "GC%", "deduplicated%"))
+
+
+p <- ggplot(df, aes(x=stat, y=value, fill=Filename)) +
+    geom_bar(stat="identity", position=position_dodge()) +
+    xlab("") +
+    ylab("Percentage") +
+    ggtitle("") +
+    theme_classic() +
+    labs(fill = "") +
+    #scale_y_continuous(limits = c(-0.01, 1)) +
+    theme(plot.title = element_text(size=20, face = "bold"), 
+          axis.text=element_text(size=16, face="bold"),
+          strip.text.x = element_text(size = 16, face = "bold"),
+          axis.title=element_text(size=fsize, face="bold"),
+          axis.text.x = element_text(angle = 15, hjust=0.8),
+          legend.position = c(0.2, 0.9), 
+          legend.title = element_text(size=fsize, face="bold"),
+          legend.text = element_text(size=fsize))
+p
+
+pdf("graphs/figure1.pdf", width = 9, height= 6)
+p
+dev.off()
 ```
 

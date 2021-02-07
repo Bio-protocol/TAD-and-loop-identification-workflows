@@ -70,7 +70,7 @@ sh workflow/2_aggregate_results.sh
 
 #### Step 3: view the results
 
-- Results can be visualized by clicking `output/fastqc.html`.
+- Results can be visualized by clicking `output/multiqc_report.html`.
 - Alternatively, you can plot the results yourself using the below R code.
 
 ```
@@ -79,6 +79,7 @@ sh workflow/2_aggregate_results.sh
 
 ## Expected results
 
+![](graphs/figure1.pdf)
 
 ## License
 It is a free and open source software, licensed under []() (choose a license from the suggested list:  [GPLv3](LICENSE)).

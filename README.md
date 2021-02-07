@@ -86,4 +86,4 @@ sh workflow/2_aggregate_results.sh
 ![](graphs/figure1.png)
 
 ## License
-It is a free and open source software, licensed under []() (choose a license from the suggested list:  [GPLv3](LICENSE)).
+It is a free and open source software, licensed under []() (choose a license from the suggested list:  [GPLv3](LICENSE), [MIT](), or [CC BY]()).

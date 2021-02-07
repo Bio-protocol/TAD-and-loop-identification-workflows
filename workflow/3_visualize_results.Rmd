@@ -52,7 +52,7 @@ p <- ggplot(df, aes(x=stat, y=value, fill=Filename)) +
           legend.text = element_text(size=fsize))
 p
 
-pdf("graphs/figure1.pdf", width = 9, height= 6)
+png("graphs/figure1.png", width = 480, height= 480)
 p
 dev.off()
 ```

@@ -79,7 +79,7 @@ sh workflow/2_aggregate_results.sh
 
 ## Expected results
 
-![](graphs/figure1.pdf)
+![](graphs/figure1.png)
 
 ## License
 It is a free and open source software, licensed under []() (choose a license from the suggested list:  [GPLv3](LICENSE)).

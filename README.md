@@ -62,16 +62,20 @@ CGTTNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNGGAG
 sh workflow/1_run_fastqc.sh
 ```
 
-#### Step 2: view the `html` results
-
-Results can be visualized by clicking `output/fastqc.html`.
-Alternatively, you can unzip the `reads1_fqstqc.zip` and plot the results yourself using the below R code.
+#### Step 2: aggregate results from FastQC
 
 ```
-
+sh workflow/2_aggregate_results.sh
 ```
 
+#### Step 3: view the results
 
+- Results can be visualized by clicking `output/fastqc.html`.
+- Alternatively, you can plot the results yourself using the below R code.
+
+```
+3_visualize_results.Rmd
+```
 
 ## Expected results
 

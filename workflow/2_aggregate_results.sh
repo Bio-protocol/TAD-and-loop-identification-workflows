@@ -20,4 +20,4 @@ mycanonicalpath=$(canonicalPath "$../")
 
 
 # Your code start from here:
-multiqc cache/*fastqc.zip > output
+multiqc cache/*fastqc.zip --outdir output

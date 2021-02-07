@@ -30,6 +30,7 @@ This is an example workflow to check the quality of the paired-end fastq files u
 
 - __Required software and versions__: 
     - [FastQC v0.11.9](http://www.bioinformatics.babraham.ac.uk/projects/download.html#fastqc)
+    - [multiqc](https://github.com/ewels/MultiQC)
     - [R 3.6.3](https://cran.r-project.org/) for results ploting
         - [RStudio 1.4](https://rstudio.com/), [ggplot2 3.3.3](https://cran.r-project.org/web/packages/ggplot2/index.html), [tidyr 1.1.2](https://github.com/tidyverse/tidyr)
 

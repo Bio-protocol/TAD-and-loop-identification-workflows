@@ -1,0 +1,6 @@
+peaks:
+  - COMBINED,ALL 
+resfrags:
+  - Gh38_dpnii.bed 
+hicpro_output:
+  - ../HiC-Pro/result

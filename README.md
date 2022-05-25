@@ -1,7 +1,7 @@
 # TAD-and-loop-identification-workflows
 The repository contains the code to identify TAD and loop from Hi-C and HiChIP library
 # The flowchart
-![Image text](https://github.com/Bio-protocol/TAD-and-loop-identification-workflows/tree/master/workflow/Pipeline.png)
+![Image text](https://github.com/Bio-protocol/TAD-and-loop-identification-workflows/tree/master/workflow/workflow.png)
 # Rawdata
 The rawdata.txt file in this folder records the original file download address, as github uploads cannot exceed 100 Mb.
 # Fit-Hi-C, FitHiChIP, hichipper, HiC-Pro, Juicer, Rawdata

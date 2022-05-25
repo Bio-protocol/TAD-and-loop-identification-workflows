@@ -7,11 +7,13 @@ The rawdata.txt file in this folder records the original file download address, 
 # Fit-Hi-C, FitHiChIP, hichipper, HiC-Pro, Juicer, Rawdata
 These folder contains Scripts required to run these software
 # Fit-Hi-C
-'''HiC-Pro -c HiC-Pro.config -i ../Rawdata -o result -p
+
+```
+HiC-Pro -c HiC-Pro.config -i ../Rawdata -o result -p
 cd result
 sh HiCPro_step1.sh
 sh HiCPro_step2.sh
-'''
+```
 # output
 The folder contains the results of TADs and loops from Hi-C and HiChIP library
 # result visualisation

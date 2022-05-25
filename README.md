@@ -9,5 +9,6 @@ These folder contains Scripts required to run these software
 # Fit-Hi-C
 # result
 The folder contains the results of TADs and loops from Hi-C and HiChIP library
+![image](result/result.png)
 # workflow.sh
 The script record the run commands of theses tools

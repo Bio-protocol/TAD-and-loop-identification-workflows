@@ -8,7 +8,7 @@ The rawdata.txt file in this folder records the original file download address, 
 These folder contains Scripts required to run these software
 # Fit-Hi-C
 
-```
+```shell
 HiC-Pro -c HiC-Pro.config -i ../Rawdata -o result -p
 cd result
 sh HiCPro_step1.sh

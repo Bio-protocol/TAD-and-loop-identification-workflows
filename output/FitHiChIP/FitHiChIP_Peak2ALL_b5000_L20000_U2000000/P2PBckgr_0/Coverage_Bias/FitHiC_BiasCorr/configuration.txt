@@ -1,0 +1,12 @@
+Configurations used for FitHiChIP execution: 
+Interaction type (1: peak to peak, 2: peak to non peak, 3: peak to all, 4: all to all, 5: all of 1 to 4): 3 
+Current interaction type: 3 
+FitHiChIP with equal occupancy binning
+Lower distance threshold (for significant interaction calling): 20000 
+Upper distance threshold (for significant interaction calling): 2000000 
+FDR threshold: 0.01 
+Number of bins for FitHiChIP spline modeling: 200 
+Bias correction ? (1: yes, 0: no) : 1 
+Bias type employed (1: coverage specific, 2: ICE bias): 1 
+Bias correction - Regression model using the observed contact count and the bias values 
+Merging nearby interactions (1: yes, 0: no): 1 

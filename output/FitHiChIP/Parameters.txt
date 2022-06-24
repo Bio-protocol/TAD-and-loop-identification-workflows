@@ -1,0 +1,12 @@
+Summarizing the parameters employed in this execution
+Listing the input files: 
+Input file containing the valid pairs (generated from HIC-PRO pipeline): /public/home/xhhuang/biodate/bio_protocol/bioprotocol_github/TAD-and-loop-identification-workflows/input/FitHiChIP_input_data/chr21.allValidPairs 
+Input ChIP-seq peak file: /public/home/xhhuang/biodate/bio_protocol/bioprotocol_github/TAD-and-loop-identification-workflows/input/FitHiChIP_input_data/chr21_H3K27ac.bed 
+File containing chromosome size information corresponding to the reference chromosome: /public/home/xhhuang/biodate/bio_protocol/bioprotocol_github/TAD-and-loop-identification-workflows/input/FitHiChIP_input_data/Gh38_size.txt 
+Output directory which will store all the results: /public/home/xhhuang/biodate/bio_protocol/bioprotocol_github/TAD-and-loop-identification-workflows/output/FitHiChIP 
+Base directory containing the HIC-PRO executable: /public/home/software/opt/bio/software/HiC-Pro/2.11.14/HiC-Pro_2.11.4 
+Low distance threshold: 20000 
+Higher distance threshold: 2000000 
+BIN_SIZE: 5000 
+PREFIX (string of output files): FitHiChIP 
+OverWrite (1 means existing files will be overwritten): 1 

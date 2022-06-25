@@ -1,0 +1,4 @@
+#Download genome data
+wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.29_GRCh38.p14/GCA_000001405.29_GRCh38.p14_genomic.fna.gz
+gzip -d GCA_000001405.29_GRCh38.p14_genomic.fna.gz
+mv GCA_000001405.29_GRCh38.p14_genomic.fna GRCh38.fa

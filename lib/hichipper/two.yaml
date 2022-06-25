@@ -3,4 +3,4 @@ peaks:
 resfrags:
   - Gh38_dpnii.bed 
 hicpro_output:
-  - ../HiC-Pro/result
+  - ./HiC-Pro/result

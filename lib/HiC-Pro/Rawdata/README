@@ -1,3 +1,4 @@
 SRR15558155, SRR15558163
-https://dataview.ncbi.nlm.nih.gov/object/SRR15558155
-https://dataview.ncbi.nlm.nih.gov/object/SRR15558163
+# The order of download HiC data
+grabseqs sra SRR15558155
+grabseqs sra SRR15558163

@@ -1,0 +1,3 @@
+# The order of download HiC data
+grabseqs sra SRR5831489
+grabseqs sra SRR5831490

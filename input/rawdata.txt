@@ -22,26 +22,25 @@
   wgEncodeRegTxnCaltechRnaSeqGm12878R2x75Il200SigPooled.bigWig
 ## Cotton TM-1 HiC
   SRR15558155, SRR15558163
-  https://dataview.ncbi.nlm.nih.gov/object/SRR15558155
-  https://dataview.ncbi.nlm.nih.gov/object/SRR15558163
+  https://www.ncbi.nlm.nih.gov/sra/?term=SRR15558155
+  https://www.ncbi.nlm.nih.gov/sra/?term=SRR15558163
 ## Cotton TM-1 ChIP-Seq
  #input
   SRR19090422
-  https://dataview.ncbi.nlm.nih.gov/object/SRR19090422
+  https://www.ncbi.nlm.nih.gov/sra/?term=SRR19090422
  #H3K27ac
   SRR15508578, SRR15508577
-  https://dataview.ncbi.nlm.nih.gov/object/SRR15508578
-  https://dataview.ncbi.nlm.nih.gov/object/SRR15508577
+  https://www.ncbi.nlm.nih.gov/sra/?term=SRR15508578
+  https://www.ncbi.nlm.nih.gov/sra/?term=SRR15508577
  #H3K4me3
   SRR15508592,SRR15508593
-  https://dataview.ncbi.nlm.nih.gov/object/SRR15508592
-  https://dataview.ncbi.nlm.nih.gov/object/SRR15508593
+  https://www.ncbi.nlm.nih.gov/sra/?term=SRR15508592
+  https://www.ncbi.nlm.nih.gov/sra/?term=SRR15508593
  #H3K9me2
   SRR15508583,SRR15508582
-  https://dataview.ncbi.nlm.nih.gov/object/SRR15508583
-  https://dataview.ncbi.nlm.nih.gov/object/SRR1550858
+  https://www.ncbi.nlm.nih.gov/sra/?term=SRR15508583
+  https://www.ncbi.nlm.nih.gov/sra/?term=SRR15508582
 ## Cotton TM-1 RNA-Seq
-  SRR15509733, SRR15509732, SRR15509732
-  https://dataview.ncbi.nlm.nih.gov/object/SRR15509733
-  https://dataview.ncbi.nlm.nih.gov/object/SRR15509732
-  https://dataview.ncbi.nlm.nih.gov/object/SRR15509732
+  SRR15509733, SRR15509732
+  https://www.ncbi.nlm.nih.gov/sra/?term=SRR15509733
+  https://www.ncbi.nlm.nih.gov/sra/?term=SRR15509732

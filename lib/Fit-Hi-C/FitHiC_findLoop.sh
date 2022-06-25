@@ -1,4 +1,4 @@
-## Convert the result file produce by HiC-Pro to the input file of Fit-Hi-C
+## Convert the result file produced by HiC-Pro to the input file of Fit-Hi-C
 python hicpro2fithic.py -i ../../input/HiC-Pro_result_matrix_chr5_chr6/5Kb/chr5.matrix -b ../../input/HiC-Pro_result_matrix_chr5_chr6/5Kb/chr5_abs.bed -r 5000 -o ../../input/fithic_input_data -n chr5 
 python hicpro2fithic.py -i ../../input/HiC-Pro_result_matrix_chr5_chr6/5Kb/chr6.matrix -b ../../input/HiC-Pro_result_matrix_chr5_chr6/5Kb/chr6_abs.bed -r 5000 -o ../../input/fithic_input_data -n chr6 
 

@@ -1,10 +1,10 @@
-#HiC-Pro, generates  chromosome interaction matrix file
+#HiC-Pro, generates chromosome interaction matrix file
 #HiC-Pro requires an input file to be downloaded before running, the detail can be find in ./lib/HiC-Pro/run_HiC-Pro.sh 
 #cd ./lib/HiC-Pro
 #sh run_HiC-Pro.sh
 #cd ../..
 
-#Juicer identifies TADs, infer loops
+#Juicer identifies TADs, infers loops
 #input/juicer_input_data/chr1.hic.gz need decompression
 cd ./lib/Juicer
 sh juicer_findTAD_loop.sh
@@ -23,7 +23,7 @@ cd ./lib/Fit-Hi-C
 sh FitHiC_findLoop.sh
 cd ../..
 
-#FitHiChIP, infer loops
+#FitHiChIP, infers loops
 #input/FitHiChIP_input_data/chr21.allValidPairs need decompression
 cd ./lib/FitHiChIP
 sh FitHiChIP_findloop.sh

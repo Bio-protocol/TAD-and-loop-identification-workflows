@@ -1,9 +1,9 @@
-## You can find details of downloading genome data from annotation/README
-## You can find details of downloading HiC data from Rawdata/README 
+## You can find detail of downloading genome data from annotation/README
+## You can find detail of downloading HiC data from Rawdata/README 
  
 
 ## Enzyme fragments
-python ./annotation/digest_genome.py ../Rawdata/GRCh38.fa -r dpnii -o ./annotation/GRCh38_dpnii.bed
+python ./annotation/digest_genome.py ./Rawdata/GRCh38.fa -r dpnii -o ./annotation/GRCh38_dpnii.bed
 
 ## Chromosome size
 cd annotation

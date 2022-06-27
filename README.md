@@ -95,8 +95,8 @@ bash FitHiChIP_HiCPro.sh -C configfile_BiasCorrection_CoverageBias_chr21
 More parameters details of FitHiChIP can be find in https://ay-lab.github.io/FitHiChIP/
 
 
-## hichipper requires hicpro output file
-## HiC-Pro, need to download rawdata, the detail can be find in hichipper/HiC-Pro/annotation/README and hichipper/HiC-Pro/Rawdata/README 
+## hichipper requires HiC-Pro output file
+## HiC-Pro need to download rawdata, the detail can be find in hichipper/HiC-Pro/annotation/README and hichipper/HiC-Pro/Rawdata/README 
 
 ```
 #run HiC-Pro

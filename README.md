@@ -1,25 +1,25 @@
 # TAD-and-loop-identification-workflows
-The repository contains the code to identify TAD and loop from Hi-C and HiChIP library
+The repository contains the code to identify TADs and loops from Hi-C and HiChIP library
 # The flowchart
 ![image](workflow/workflow.png)
 # The complete process of identifying TADs and loops by multiple software
-# By running "sh workflow.sh" can directly identity TAD through TADLib and juicer, identify loops through fithic, juicer and FitHiChIP.
-The test data of TADLib is ./input/TADLib_input_data/chr5_chr6.cool.gz. The test data need to decompress before runing
-The test data of Juicer is ./input/juicer_input_data/chr1.hic.gz. The test data need to decompress before runing
-The test data of FitHiC in ./input/fithic_input_data
-The test data of FitHiChIP is ./input/FitHiChIP_input_data/chr21.allValidPairs.gz. The test data need to decompress before runing
+# By running "sh workflow.sh" can directly identify TADs through TADLib and Juicer, identify loops through fithic, Juicer and FitHiChIP.
+The test data of TADLib is ./input/TADLib_input_data/chr5_chr6.cool.gz. The test data need to decompress before runing  
+The test data of Juicer is ./input/juicer_input_data/chr1.hic.gz. The test data need to decompress before runing  
+The test data of FitHiC in ./input/fithic_input_data  
+The test data of FitHiChIP is ./input/FitHiChIP_input_data/chr21.allValidPairs.gz. The test data need to decompress before running  
 # Limited by upload file size of github, the rawdata of HiC-Pro and hichipper need to be downloaded by user
-The running orders of HiC-Pro and hichipper are commendted out in workflow.sh
-The download detail of HiC-Pro rawdata in lib/HiC-Pro/Rawdata/README
-The download detail of hichipper rawdata in lib/hichipper/HiC-Pro/Rawdata/README 
+The running orders of HiC-Pro and hichipper are commendted out in workflow.sh  
+The download detail of HiC-Pro rawdata in lib/HiC-Pro/Rawdata/README  
+The download detail of hichipper rawdata in lib/hichipper/HiC-Pro/Rawdata/README  
 ```shell
 sh workflow.sh
 ```
 # Rawdata
 The input/rawdata.txt record the download adderss of rawdata used in the article
 # Detailed steps of HiC-Pro, Juicer, TADLib, Fit-Hi-C, FitHiChIP, hichipper
-Lib folder contains Scripts required to run these software
-## HiC-Pro, need to download rawdata, the detail can be find in ./lib/HiC-Pro/run_HiC-Pro.sh and lib/HiC-Pro/Rawdata/README
+Lib folder contains some scripts required to run these pipeline
+## HiC-Pro, need to download rawdata, the detail can be find in ./lib/HiC-Pro/run_HiC-Pro.sh and ./lib/HiC-Pro/Rawdata/README
 ```shell
 ## Enzyme fragments
 python ./annotation/digest_genome.py ../Rawdata/Gbar.fa -r dpnii -o ./annotation/Gbar_dpnii.bed

@@ -3,7 +3,7 @@ The repository contains the code to identify TADs and loops from Hi-C and HiChIP
 # The flowchart
 ![image](workflow/workflow.png)
 # The complete process of identifying TADs and loops by multiple software
-# By running "sh workflow.sh" can directly identify TADs through TADLib and Juicer, identify loops through fithic, Juicer and FitHiChIP.
+# By running "sh workflow.sh" can directly identify TADs through TADLib and Juicer, identify loops through Fit-Hi-C, Juicer and FitHiChIP.
 The test data of TADLib is ./input/TADLib_input_data/chr5_chr6.cool.gz. The test data need to decompress before runing  
 The test data of Juicer is ./input/juicer_input_data/chr1.hic.gz. The test data need to decompress before runing  
 The test data of FitHiC in ./input/fithic_input_data  

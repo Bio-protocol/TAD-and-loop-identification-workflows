@@ -6,7 +6,7 @@ The repository contains the code to identify TADs and loops from Hi-C and HiChIP
 # By running "sh workflow.sh",users can directly identify TADs through TADLib and Juicer, identify loops through Fit-Hi-C, Juicer and FitHiChIP.
 The test data of TADLib is ./input/TADLib_input_data/chr5_chr6.cool.gz. The test data need to decompress before runing  
 The test data of Juicer is ./input/juicer_input_data/chr1.hic.gz. The test data need to decompress before runing  
-The test data of FitHiC is in ./input/fithic_input_data  
+The test data of Fit-Hi-C is in ./input/fithic_input_data  
 The test data of FitHiChIP is ./input/FitHiChIP_input_data/chr21.allValidPairs.gz. The test data need to decompress before running  
 # Limited by file size of github, the rawdata of HiC-Pro and hichipper need to be downloaded by user
 The running methods of HiC-Pro and hichipper are shown in workflow.sh  

@@ -61,21 +61,22 @@ More parameter details of Juicer can be found in https://github.com/aidenlab/jui
 
 
 ## TADLib
-```
-# Produce cool file
+``` shell
+## Produce cool file
 cp ../../input/HiC-Pro_result_matrix_chr5_chr6/20Kb/chr5.matrix ../../input/TADLib_input_data/1_1.txt
 cp ../../input/HiC-Pro_result_matrix_chr5_chr6/20Kb/chr6.matrix ../../input/TADLib_input_data/2_2.txt
-# toCooler from HiCPeaks
+
+## toCooler from HiCPeaks
 toCooler -O ../../input/TADLib_input_data/chr5_chr6.cool -d ./chr5_chr6_dataset --chromsizes-file ./chr5_chr6.chromsizes --nproc 2 --no-balance
 
-# Identify TADs
+## Identify TADs
 hitad -O ../../output/TAD_Lib/cotton_chr5_chr6_TADLib_TAD.bed -d meta_file --logFile hitad.log -p 2 -W RAW 
 ```
 More parameter details of TADLib can be found in https://xiaotaowang.github.io/TADLib/hitad_api.html
 
 
 ## Fit-Hi-C
-```
+``` shell
 ## Convert the result file produce by HiC-Pro to the input file of Fit-Hi-C
 python hicpro2fithic.py -i ../../input/HiC-Pro_result_matrix_chr5_chr6/5Kb/chr5.matrix -b ../../input/HiC-Pro_result_matrix_chr5_chr6/5Kb/chr5_abs.bed -r 5000 -o ../../input/fithic_input_data -n chr5 
 python hicpro2fithic.py -i ../../input/HiC-Pro_result_matrix_chr5_chr6/5Kb/chr6.matrix -b ../../input/HiC-Pro_result_matrix_chr5_chr6/5Kb/chr6_abs.bed -r 5000 -o ../../input/fithic_input_data -n chr6 
@@ -88,8 +89,8 @@ More parameter details of Fit-Hi-C can be found in https://github.com/ay-lab/fit
 
 
 ## FitHiChIP
-```
-# Infer loops
+``` shell
+## Infer loops
 bash FitHiChIP_HiCPro.sh -C configfile_BiasCorrection_CoverageBias_chr21 
 ```
 More parameter details of FitHiChIP can be found in https://ay-lab.github.io/FitHiChIP/
@@ -98,8 +99,8 @@ More parameter details of FitHiChIP can be found in https://ay-lab.github.io/Fit
 ## hichipper needs output file produced by HiC-Pro
 ## HiC-Pro needs downloaded rawdata. The details can be found in hichipper/HiC-Pro/annotation/README and hichipper/HiC-Pro/Rawdata/README 
 
-```
-#run HiC-Pro
+``` shell
+## run HiC-Pro
 
 ## Enzyme fragments
 python ./annotation/digest_genome.py ../Rawdata/GRCh38.fa -r dpnii -o ./annotation/GRCh38_dpnii.bed
@@ -125,7 +126,7 @@ cd result
 sh HiCPro_step1.sh
 sh HiCPro_step2.sh
 
-# running hichipper
+## running hichipper
 hichipper --out result two.yaml --macs2-string "-q 0.1" --macs2-genome "hs"
 ```
 More parameter details of hichipper can be found in https://hichipper.readthedocs.io/en/latest/

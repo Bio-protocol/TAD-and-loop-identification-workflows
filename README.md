@@ -19,7 +19,7 @@ sh workflow.sh
 The input/rawdata.txt includes the download adderss of rawdata used in this pipeline
 # Detailed steps of HiC-Pro, Juicer, TADLib, Fit-Hi-C, FitHiChIP, hichipper
 Lib folder contains some scripts required to run this pipeline
-## HiC-Pro needs downloaded rawdata, and the detail can be find in ./lib/HiC-Pro/run_HiC-Pro.sh and ./lib/HiC-Pro/Rawdata/README
+## HiC-Pro needs downloaded rawdata, and the detail can be found in ./lib/HiC-Pro/run_HiC-Pro.sh and ./lib/HiC-Pro/Rawdata/README
 ```shell
 ## Enzyme fragments
 python ./annotation/digest_genome.py ../Rawdata/Gbar.fa -r dpnii -o ./annotation/Gbar_dpnii.bed
@@ -46,7 +46,7 @@ cd result
 sh HiCPro_step1.sh
 sh HiCPro_step2.sh
 ```
-More parameter details of HiC-Pro can be find in https://nservant.github.io/HiC-Pro/
+More parameter details of HiC-Pro can be found in https://nservant.github.io/HiC-Pro/
 
 
 ## Juicer, identifies TADs and infers loops
@@ -57,7 +57,7 @@ java -jar scripts/juicer_tools.jar arrowhead -m 2000 -r 20000 -k KR --threads 15
 ## infers loops
 java -jar scripts/juicer_tools.jar hiccups --cpu -r 5000,10000 -f 0.1,0.1 -p 4,2 -i 7,5 -d 20000,20000 -t 0.02,1.5,1.75,2 -k KR --threads 10 ../../input/juicer_input_data/chr1.hic ../../output/Juicer/loop
 ```
-More parameter details of Juicer can be find in https://github.com/aidenlab/juicer/wiki
+More parameter details of Juicer can be found in https://github.com/aidenlab/juicer/wiki
 
 
 ## TADLib
@@ -71,7 +71,7 @@ toCooler -O ../../input/TADLib_input_data/chr5_chr6.cool -d ./chr5_chr6_dataset 
 # Identifies TADs
 hitad -O ../../output/TAD_Lib/cotton_chr5_chr6_TADLib_TAD.bed -d meta_file --logFile hitad.log -p 2 -W RAW 
 ```
-More parameter details of TADLib can be find in https://xiaotaowang.github.io/TADLib/hitad_api.html
+More parameter details of TADLib can be found in https://xiaotaowang.github.io/TADLib/hitad_api.html
 
 
 ## Fit-Hi-C
@@ -84,7 +84,7 @@ python hicpro2fithic.py -i ../../input/HiC-Pro_result_matrix_chr5_chr6/5Kb/chr6.
 fithic -f ../../input/fithic_input/input_data/chr5.fithic.fragmentMappability.gz -i ../../input/fithic_input_data/chr5.fithic.interactionCounts.gz -r 5000 -L 10000 -U 3000000 -p 2 -b 200 -o ../../output/Fit-Hi-C -l chr5
 fithic -f ../../input/fithic_input/input_data/chr6.fithic.fragmentMappability.gz -i ../../input/fithic_input_data/chr6.fithic.interactionCounts.gz -r 5000 -L 10000 -U 3000000 -p 2 -b 200 -o ../../output/Fit-Hi-C -l chr6
 ```
-More parameter details of Fit-Hi-C can be find in https://github.com/ay-lab/fithic
+More parameter details of Fit-Hi-C can be found in https://github.com/ay-lab/fithic
 
 
 ## FitHiChIP
@@ -92,11 +92,11 @@ More parameter details of Fit-Hi-C can be find in https://github.com/ay-lab/fith
 # Infers loops
 bash FitHiChIP_HiCPro.sh -C configfile_BiasCorrection_CoverageBias_chr21 
 ```
-More parameter details of FitHiChIP can be find in https://ay-lab.github.io/FitHiChIP/
+More parameter details of FitHiChIP can be found in https://ay-lab.github.io/FitHiChIP/
 
 
 ## hichipper needs output file produced by HiC-Pro
-## HiC-Pro needs download rawdata. The details can be find in hichipper/HiC-Pro/annotation/README and hichipper/HiC-Pro/Rawdata/README 
+## HiC-Pro needs download rawdata. The details can be found in hichipper/HiC-Pro/annotation/README and hichipper/HiC-Pro/Rawdata/README 
 
 ```
 #run HiC-Pro
@@ -128,7 +128,7 @@ sh HiCPro_step2.sh
 # runn hichipper
 hichipper --out result two.yaml --macs2-string "-q 0.1" --macs2-genome "hs"
 ```
-More parameter details of hichipper can be find in https://hichipper.readthedocs.io/en/latest/
+More parameter details of hichipper can be found in https://hichipper.readthedocs.io/en/latest/
 
 # output
 The folder contains the results of TADs and loops from Hi-C and HiChIP library
